@@ -6,12 +6,12 @@ live_loop :percusion_sintetizada do
   
   sync :metronome  # Sincronizado con el loop del metrónomo.
   
-  use_synth :pluck
+  use_synth :beep
   
   play :e5,
     release: 0.2, # Duración del sonido.
     cutoff: 100,  # Sonido más o menos brillante.
-    amp: 1,  # Amplitud del sonido.
+    amp: 0.8,  # Amplitud del sonido.
     pan: rrand(-0.9, 0.9), # Sonido de izquierda a derecha.
     depth: 1, # Control de modulación FM.
     divisor: 2, # Control de la profundidad de modulación.
